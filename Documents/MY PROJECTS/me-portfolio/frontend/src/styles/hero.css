@@ -1,0 +1,109 @@
+/* src/styles/hero.css */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  background: radial-gradient(circle at top, #0f0f1a, #050509);
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  padding: 0 1rem;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #a855f7, #ec4899, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: #cbd5e1;
+  margin-top: 0.4rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(236, 72, 153, 0.5);
+}
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  padding: 0.8rem 1.8rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.hero-tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.hero-tech span {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-tech span:hover {
+  background: rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.4);
+}

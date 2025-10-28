@@ -1,0 +1,99 @@
+<section class="section my-work" data-section="section3" id="section3">
+  <div class="section-heading" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="line-dec"></div>
+    <span>Explore my data science and AI projects. Filter by domain and click a project to view its tools, technologies, and live demos.</span>
+  </div>
+
+  <!-- FILTERS -->
+  <form class="isotope-toolbar" id="filter-toolbar" data-aos="zoom-in" aria-label="Project categories">
+    <label class="active" data-type="*">All</label>
+    <label data-type="climate">Climate</label>
+    <label data-type="health">Health</label>
+    <label data-type="food">Nutrition</label>
+    <label data-type="education">Education</label>
+    <label data-type="agriculture">Agriculture</label>
+    <label data-type="others">Other & Fraud Detection</label>
+  </form>
+
+  <!-- PROJECT GRID -->
+  <div class="projects-grid" id="projects-grid">
+    <div class="project-card" data-type="climate" data-aos="zoom-in-up">
+      <div class="project-thumb">
+        <img src="assets/images/flood-prediction.jpg" alt="Flood Prediction" data-project="flood">
+      </div>
+      <div class="project-info">
+        <h4>Flood Prediction System (Kenya)</h4>
+        <p>Hybrid LSTM + Random Forest model predicting flood risk across Kenyan counties with real-time alerts and geospatial visualizations.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>TensorFlow</span><span>Streamlit</span>
+        </div>
+        <button class="view-btn" data-project="flood">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="health" data-aos="zoom-in-up">
+      <div class="project-thumb">
+        <img src="assets/images/voice.jpeg" alt="AI Voice Companion" data-project="voiceai">
+      </div>
+      <div class="project-info">
+        <h4>AI Voice Companion</h4>
+        <p>Assistive voice AI designed for visually impaired users. Integrates speech recognition, NLP, and real-time voice responses.</p>
+        <div class="tech-tags">
+          <span>Flask</span><span>Speech AI</span><span>Python</span>
+        </div>
+        <button class="view-btn" data-project="voiceai">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="agriculture" data-aos="zoom-in-up">
+      <div class="project-thumb">
+        <img src="assets/images/soil.jpg" alt="Soil Moisture Prediction" data-project="soil">
+      </div>
+      <div class="project-info">
+        <h4>Soil Moisture Prediction</h4>
+        <p>Machine learning model using groundwater and climate data to optimize irrigation and improve crop yields for African farmers.</p>
+        <div class="tech-tags">
+          <span>Scikit-learn</span><span>IoT</span><span>Forecasting</span>
+        </div>
+        <button class="view-btn" data-project="soil">View Details</button>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="education" data-aos="zoom-in-up">
+      <div class="project-thumb">
+        <img src="assets/images/leshau-nenus.png" alt="Leshau Nexus" data-project="leshau">
+      </div>
+      <div class="project-info">
+        <h4>Leshau Nexus</h4>
+        <p>Flask-based AI-enhanced school management system with analytics, grade uploads, and timetable generation.</p>
+        <div class="tech-tags">
+          <span>Flask</span><span>PostgreSQL</span><span>React</span>
+        </div>
+        <button class="view-btn" data-project="leshau">View Details</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="project-modal" id="project-modal" aria-hidden="true">
+  <div class="modal-content" data-aos="fade-up">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div class="modal-body">
+      <div class="modal-image">
+        <img id="modal-img" src="" alt="Project Preview" />
+      </div>
+      <div class="modal-details">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="modal-tags" id="modal-tags"></div>
+        <div class="modal-tools" id="modal-tools"></div>
+        <div class="modal-actions">
+          <a href="#" id="modal-demo" target="_blank" class="btn-demo">Live Demo</a>
+          <a href="#" id="modal-more" target="_blank" class="btn-github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

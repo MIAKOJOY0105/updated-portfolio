@@ -1,0 +1,201 @@
+.contact-section {
+  position: relative;
+  padding: 90px 20px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.contact-title {
+  font-family: "Orbitron", sans-serif;
+  color: #00e5ff;
+  text-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-sub {
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0f2027;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.link-btn.phone {
+  background: linear-gradient(90deg, #00e5ff, #00ffa3);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+}
+
+.link-btn.whatsapp {
+  background: linear-gradient(90deg, #25d366, #128c7e);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.4);
+}
+
+.link-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* 💬 Contact Form */
+.contact-form {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+  background: rgba(10, 25, 47, 0.6);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.1);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.9rem 0.8rem;
+  background: transparent;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  color: #aaa;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #00e5ff;
+}
+
+/* 🛸 Send Button */
+.send-btn {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+  color: #0f2027;
+  background: radial-gradient(circle, #00e5ff, #0077ff);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.send-btn.sent {
+  background: radial-gradient(circle, #00ffa3, #00e5ff);
+  box-shadow: 0 0 45px rgba(0, 255, 163, 0.9);
+  transform: scale(1.2);
+}
+
+/* Floating ring */
+.ring {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0, 229, 255, 0.4);
+  animation: spin 5s linear infinite;
+}
+
+.sent-msg {
+  margin-top: 1rem;
+  color: #00ffa3;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* 🌈 Floating Orbs */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.orb1 {
+  width: 300px;
+  height: 300px;
+  background: #00e5ff;
+  top: 10%;
+  left: -100px;
+  animation: floaty 12s infinite ease-in-out alternate;
+}
+
+.orb2 {
+  width: 350px;
+  height: 350px;
+  background: #00ffa3;
+  bottom: 5%;
+  right: -120px;
+  animation: floaty 14s infinite ease-in-out alternate;
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}

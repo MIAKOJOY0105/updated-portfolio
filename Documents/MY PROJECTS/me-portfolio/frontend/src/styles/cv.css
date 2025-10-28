@@ -1,0 +1,162 @@
+.cv-section {
+  padding: 80px 0;
+  position: relative;
+  color: #fff;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.line-dec {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  margin: 12px auto;
+  border-radius: 2px;
+}
+
+.section-heading p {
+  color: #bbb;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cv-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.cv-card {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(14px);
+  transition: 0.4s;
+}
+
+.cv-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cv-card p {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.gradient1 {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+}
+
+.gradient2 {
+  background: linear-gradient(90deg, #ec4899, #3b82f6);
+}
+
+.gradient1:hover,
+.gradient2:hover {
+  filter: brightness(1.1);
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: rgba(24, 24, 24, 0.95);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 950px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  color: #fff;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.cert-btn {
+  background: transparent;
+  color: #a855f7;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  width: 100%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.cert-btn:hover {
+  background: rgba(168, 85, 247, 0.1);
+}
+
+.cert-viewer {
+  margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 10px;
+}
+
+.viewer-iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+}
+
+.close-red {
+  background: #dc3545;
+}

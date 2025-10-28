@@ -1,0 +1,177 @@
+/* -------------------------------
+   PROJECTS PAGE — Modern Style
+--------------------------------*/
+.section.my-work {
+  padding: 80px 8%;
+  color: #fff;
+  background: radial-gradient(circle at top left, #0a0f1f, #080b12 80%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #66f, #9f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading span {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.line-dec {
+  width: 90px;
+  height: 3px;
+  margin: 12px auto 20px;
+  background: linear-gradient(90deg, #66f, #6ff);
+  border-radius: 3px;
+}
+
+/* Filter Buttons */
+.isotope-toolbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.isotope-toolbar label {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #bbb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.isotope-toolbar label:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.isotope-toolbar .active {
+  background: linear-gradient(90deg, #5a5afc, #22d3ee);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(90, 90, 252, 0.3);
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(80, 80, 255, 0.3);
+}
+
+.project-thumb {
+  overflow: hidden;
+  height: 180px;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  padding: 16px 20px;
+}
+
+.project-info h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.project-info p {
+  font-size: 0.92rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tech-tags span {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Buttons */
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #22d3ee, #6366f1);
+}
+
+.view-btn.github {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
+
+.view-btn.github:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Animations on scroll */
+[data-aos] {
+  transition: all 0.6s ease !important;
+}
